@@ -32,7 +32,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
 }
 
 h1 b{
@@ -46,14 +45,12 @@ h1 b{
     border-radius: 25px;
     overflow: hidden;
     width: 25%;
-    height: 75%;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .container {
     margin: 5%;
     padding: 5px 16px;
@@ -67,14 +64,14 @@ h1 b{
 .icon {
     width: 100%;
     margin: 1px;
-    
+
 }
 
 .list {
     overflow: hidden;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    
+
 }
 
 .list ul li{
@@ -106,7 +103,7 @@ button {
     width: 100%;
     outline: 0;
     margin-left: 20px;
-    
+
 }
 
 .button-proceed {
@@ -119,3 +116,18 @@ button {
     background-color: var(--Very-pale-blue);
     color: var(--Desaturated-blue);
 }
+
+@viewport {
+  zoom: 1.0;
+  widows: extend-to-zoom;
+}
+@-ms-viewport{
+  widows: extend-to-zoom;
+  zoom: 1.0;
+}
+
+@media only screen and (max-width: 750px) {
+    .card {
+      width: 375px;
+    }
+  }
